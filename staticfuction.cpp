@@ -13,6 +13,7 @@ class Mahasiswa {
     void setID();
     void printAll();
 
+    //pembuatan static fuction
     static void setnim(int pnim) {
         nim = pnim;
     };

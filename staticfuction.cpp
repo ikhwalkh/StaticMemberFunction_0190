@@ -28,8 +28,33 @@ class Mahasiswa {
 
 int Mahasiswa::nim = 0;
 
+void Mahasiswa::setID() {
+    id = ++nim;
+
+}
+
 void Mahasiswa::printAll() {
-    cout << "ID : " << id << endl;
-    cout << "Nama : " << nama << endl;
+    cout << "ID = " << id << endl;
+    cout << "Nama = " << nama << endl;
     cout << endl;
-};
+}
+
+int main() {
+    Mahasiswa mhs1("Sri Dadi");
+    Mahasiswa mhs2("Budi Jatmiko");
+    //memberi nilai pada setNim() untuk merubah nilai Nim
+    Mahasiswa::setnim(9);
+    Mahasiswa mhs3("Andi Janu");
+    Mahasiswa mhs4("Joko wahono");
+
+
+    mhs1.printAll();
+    mhs2.printAll();
+    mhs3.printAll();
+    mhs4.printAll();
+
+    cout << "Akses dari luar object = " << Mahasiswa::getnim() << endl;
+    system("Pause");
+
+    return 0;
+}

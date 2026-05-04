@@ -56,6 +56,7 @@ int main() {
     mhs3.printAll();
     mhs4.printAll();
 
+    //menampilkan Nim terakhir yang di proses
     cout << "Akses dari luar object = " << Mahasiswa::getnim() << endl;
     system("Pause");
 

@@ -17,5 +17,14 @@ class Mahasiswa {
         nim = pnim;
     };
 
-    
-}
+    static int getnim() {
+        return nim;
+    }
+
+    Mahasiswa(string pnama) :nama(pnama) {
+        setID();
+    };
+};
+
+int Mahasiswa::nim = 0;
+

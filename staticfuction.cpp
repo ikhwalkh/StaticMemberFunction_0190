@@ -12,4 +12,10 @@ class Mahasiswa {
     
     void setID();
     void printAll();
+
+    static void setnim(int pnim) {
+        nim = pnim;
+    };
+
+    
 }

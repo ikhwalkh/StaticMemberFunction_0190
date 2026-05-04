@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string> 
+#include <string>  //menyertakan library string
 using namespace std;
 
 class Mahasiswa {
